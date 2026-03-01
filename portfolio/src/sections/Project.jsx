@@ -2,8 +2,8 @@ import React from 'react'
 
 const Project = () => {
   return (
-    <div>
-      
+       <div className='w-full h-screen'>
+       Project
     </div>
   )
 }

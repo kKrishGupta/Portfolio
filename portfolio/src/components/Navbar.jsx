@@ -2,8 +2,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
-      navbar
+        <div className='w-full h-screen'>
+        Navbar
     </div>
   )
 }
