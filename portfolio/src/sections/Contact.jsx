@@ -1,10 +1,10 @@
 import React from 'react'
-
+import ParticlesBackground from '../components/ParticlesBackground'
 const Contact = () => {
   return (
-     <div className='w-full h-screen'>
-        Contact
-    </div>
+    <section>
+      {/* <ParticlesBackground/> */}
+    </section>
   )
 }
 
