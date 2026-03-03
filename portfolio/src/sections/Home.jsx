@@ -81,7 +81,7 @@ transition={{duration:0.5, delay:0.1, ease:"easeInOut"}}>
 initial={{opacity:0, y:40}}
 animate={{opacity:1, y:0}}
 transition={{duration:1}}>
-  Hello I'm a 
+  Hello I'm 
   <br />
   <span className="text-white font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl lg:whitespace-nowrap">
     Krish Gupta
@@ -130,7 +130,7 @@ transition={{delay : 0.8, duration: 0.8}}
 
 <div className="relative hidden lg:block">
   <div 
-  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-linear-to-r from-[#302b63]  via-[#00bf8f] to-[#1cd8d2] opacity-50 blur-[80px] animate-pulse"
+  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 h-75 rounded-full bg-linear-to-r from-[#302b63]  via-[#00bf8f] to-[#1cd8d2] opacity-50 blur-[80px] animate-pulse"
   />
 
 
