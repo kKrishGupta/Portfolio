@@ -21,41 +21,54 @@ export default function IntroAnimated({ onFinish }) {
   );
 
   const [index, setIndex] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
-    let timeout;
+    let mainTimeout;
+    let switchTimeout;
 
-    if (index < greetings.length - 1) {
-      timeout = setTimeout(() => {
-        setVisible(false);
+    // Faster timings
+    if (index === greetings.length - 1) {
+      mainTimeout = setTimeout(() => {
+        setShow(false);
 
-        setTimeout(() => {
-          setIndex((prev) => prev + 1);
-          setVisible(true);
-        }, 180);
-      }, 1000);
+        switchTimeout = setTimeout(() => {
+          onFinish?.();
+        }, 250);
+      }, 700);
     } else {
-      timeout = setTimeout(() => {
-        setVisible(false);
-      }, 2000);
+      mainTimeout = setTimeout(() => {
+        setShow(false);
+
+        switchTimeout = setTimeout(() => {
+          setIndex((prev) => prev + 1);
+          setShow(true);
+        }, 180);
+      }, 550);
     }
 
-    return () => clearTimeout(timeout);
-  }, [index, greetings.length]);
+    return () => {
+      clearTimeout(mainTimeout);
+      clearTimeout(switchTimeout);
+    };
+  }, [index, greetings.length, onFinish]);
 
   return (
-    <div className="fixed inset-0 bg-black flex items-center justify-center z-index: 9999;">
-      <AnimatePresence mode="wait" onExitComplete={onFinish}>
-        {visible && (
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black overflow-hidden">
+      <AnimatePresence mode="wait">
+        {show && (
           <motion.div
             key={greetings[index]}
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 1.1 }}
-            transition={{ duration: 0.4 }}
+            exit={{ opacity: 0, scale: 1.08 }}
+            transition={{
+              duration: 0.25,
+              ease: "easeInOut",
+            }}
+            className="px-4"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#1cd8d2] via-[#00bf8f] to-[#302b63] drop-shadow-lg">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-emerald-400 to-indigo-500 text-center">
               {greetings[index]}
             </h1>
           </motion.div>
