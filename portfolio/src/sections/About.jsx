@@ -3,6 +3,12 @@ import React from "react";
 import p from "../assets/p.jpg";
 
 export default function About() {
+  const stats = [
+    {label:"Experience", value:"6+ months"},
+    {label:"Specialization", value:"Full Stack Developer"},
+    {label:"Focus", value:"Performance & Scalability"},
+  ]
+
   const glows = [
     "-top-10 -left-10 w-90 h-90 opacity-20 blur-3xl ",
     "-bottom-0 -right-10 w-105 h-105 opacity-15 blur-35 delay-300",
@@ -37,6 +43,30 @@ viewport={{ once: true, amount: 0.4 }}>
         <p className="mt-2 text-lg sm:text-xl text-white/90 font-semibold ">
           Full Stack Developer
         </p>
+        <p className="mt-4 text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl md:max-w-3xl">
+          I build products where design meets intelligence.
+Specializing in modern web technologies and scalable architectures, I create seamless applications powered by clean code, responsive UI, and efficient backend systems. My work combines React ecosystems, Java services, TypeScript precision, and AI-driven innovation to deliver applications that are not only functional — but memorable.
+
+Every project I build is driven by one goal:
+Create technology that feels effortless for users and powerful behind the scenes.
+
+        </p>
+
+        <div>
+          {stats.map((s,i) =>(
+           <motion.div key={i} className="inline-block mt-6 mr-6 px-4 py-3 text-center rounded-xl  border border-white/10 "
+           initial={{ opacity: 0, y: 10 }}
+           whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.04, delay: i * 0.04}}
+            viewport={{ once: true, amount: 0.3 }}>
+            <h3 className="text-xl font-bold">{s.value}</h3>
+            <p className="text-sm text-white/90">{s.label}</p>
+           </motion.div>
+
+          ))}
+
+        </div>
+
     </div>
 </motion.div>
 </div>

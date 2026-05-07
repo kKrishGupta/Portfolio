@@ -34,8 +34,8 @@ export default function IntroAnimated({ onFinish }) {
 
         switchTimeout = setTimeout(() => {
           onFinish?.();
-        }, 250);
-      }, 700);
+        }, 120); // reduced
+      }, 350); // reduced
     } else {
       mainTimeout = setTimeout(() => {
         setShow(false);
@@ -43,8 +43,8 @@ export default function IntroAnimated({ onFinish }) {
         switchTimeout = setTimeout(() => {
           setIndex((prev) => prev + 1);
           setShow(true);
-        }, 180);
-      }, 550);
+        }, 80); // reduced
+      }, 250); // reduced
     }
 
     return () => {
@@ -63,7 +63,7 @@ export default function IntroAnimated({ onFinish }) {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.08 }}
             transition={{
-              duration: 0.25,
+              duration: 0.12, // faster animation
               ease: "easeInOut",
             }}
             className="px-4"
