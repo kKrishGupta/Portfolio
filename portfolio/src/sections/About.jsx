@@ -32,11 +32,11 @@ whileInView={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.6}}
 viewport={{ once: true, amount: 0.4 }}>
 
-    <motion.div className="relative w-[160px] h-[160px] md:w-[200px] md:h-[200px] rounded-2xl overflow-hidden shadown-2xl bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] border border-white/20"
+    <motion.div className="relative w-[160px] h-[160px] md:w-[200px] md:h-[200px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] border border-white/20"
     whileHover ={{scale:1.02}}
     transition ={{type:"spring", stiffness :200, damping:18}}
     >
-     <img src={p} alt="profile" className="absolute inset-0" />
+     <img src={p} alt="profile"  className="absolute inset-0 w-full h-full object-cover"/>
     </motion.div>
 
     <div className="flex-1 flex flex-col justify-center text-center md:text-left">

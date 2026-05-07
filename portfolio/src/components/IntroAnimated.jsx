@@ -23,19 +23,19 @@ export default function IntroAnimated({ onFinish }) {
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(true);
 
-  useEffect(() => {
+    useEffect(() => {
     let mainTimeout;
     let switchTimeout;
 
-    // Faster timings
+    // EVEN FASTER
     if (index === greetings.length - 1) {
       mainTimeout = setTimeout(() => {
         setShow(false);
 
         switchTimeout = setTimeout(() => {
           onFinish?.();
-        }, 120); // reduced
-      }, 350); // reduced
+        }, 60);
+      }, 180);
     } else {
       mainTimeout = setTimeout(() => {
         setShow(false);
@@ -43,8 +43,8 @@ export default function IntroAnimated({ onFinish }) {
         switchTimeout = setTimeout(() => {
           setIndex((prev) => prev + 1);
           setShow(true);
-        }, 80); // reduced
-      }, 250); // reduced
+        }, 40);
+      }, 140);
     }
 
     return () => {
