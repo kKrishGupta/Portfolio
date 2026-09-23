@@ -2,7 +2,7 @@ import { FaJava, FaReact, FaGithub, FaNodeJs } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiMysql } from "react-icons/si";
 import { SiMongodb, SiTailwindcss } from "react-icons/si";
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import React, { useRef, useEffect, useState } from "react";
 export default function Skills() {
   const skills = [
@@ -24,7 +24,7 @@ export default function Skills() {
   const trackRef = useRef(null);
   const touchRef = useRef(null);
   const x = useMotionValue(0);
- 
+  const touchY = useRef(null);
   useEffect(() =>{
     const el = sectionRef.current;
     if(!el) return;
@@ -83,7 +83,7 @@ useEffect(() =>{
 
   return (
 
-    <section id="skills" ref ={sectionRef} className="h-1/2 w-full pb-8 flex flex-col items-center justify-center relative bg-black/90 text-white overflow">
+    <section id="skills" ref ={sectionRef} className="h-1/2 w-full pb-8 flex flex-col items-center justify-center relative bg-black/90 text-white overflow-hidden">
 
       <div className="absolute inset-0 pointer-events-none">
 
@@ -95,7 +95,7 @@ useEffect(() =>{
 <motion.h2 className="text-4xl mt-5 sm:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#302b63] mb-10"
 initial ={{opacity:0 , y:-30}}
 whileInView = {{opacity:1, y:0}}
-transitiom ={{duration:0.5, delay:0.1}}
+transition ={{duration:0.5, delay:0.1}}
 >
   My Skills
 </motion.h2>
