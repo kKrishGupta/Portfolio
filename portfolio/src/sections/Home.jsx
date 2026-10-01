@@ -4,14 +4,14 @@ import { animate, fillOffset, motion, scale } from "framer-motion";
 import ParticlesBackground from "../components/ParticlesBackground";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 import avatar from "../assets/avator.png";
 
 const socials = [
-  {Icon : FaXTwitter ,label: "X" , href : "https://x.com/krishgupta_"},
-  {Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/krish-gupta-1aabbb1b3/"},
-  {Icon: FaGithub, label: "GitHub", href: "https://github.com/krishgupta123"}
-]
+  { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/krish-gupta-1aabbb1b3/" },
+  { Icon: FaGithub, label: "GitHub", href: "https://github.com/krishgupta123" },
+  { Icon: SiLeetcode, label: "LeetCode", href: "https://leetcode.com/u/krishgupta123/" }
+];
 
 const glowVariants = {
   initial :{scale:1 , y:0 , filter:"drop-shadow(0 0 0 rgba(0,0,0,0))"},
