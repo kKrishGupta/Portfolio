@@ -121,9 +121,9 @@ Ensure you have the following installed on your machine:
 
 ## 🔗 Connect With Me
 
-- **GitHub**: [@krishgupta123](https://github.com/krishgupta123)
-- **LinkedIn**: [Krish Gupta](https://www.linkedin.com/in/krish-gupta-1aabbb1b3/)
-- **X (Twitter)**: [@krishgupta_](https://x.com/krishgupta_)
+- **GitHub**: [@kKrishGupta](https://github.com/kKrishGupta)
+- **LinkedIn**: [Krish Gupta](https://www.linkedin.com/in/krish-gupta-3660b9299/)
+- **LeetCode**: [Ad1kFapNzh](https://leetcode.com/u/Ad1kFapNzh/)
 
 ---
 
