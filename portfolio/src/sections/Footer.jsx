@@ -23,9 +23,9 @@ const glowVariants = {
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-black text-white">
-      <div className="absolute inset-0 pointer-events-none">
+      {/* <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] opacity-20 blur-[140px]" />
-      </div>
+      </div> */}
 
       <motion.div
         className="relative z-10 px-4 sm:px-8 lg:px-10 py-16 md:py-20 flex flex-col items-center text-center space-y-8"
@@ -35,16 +35,19 @@ export default function Footer() {
         viewport={{ once: true }}
       >
         <h1
-          className="font-extrabold leading-none text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 text-center select-none tracking-tight"
+          className="font-semibold leading-none text-white text-center select-none"
           style={{
-            fontSize: "clamp(3.5rem, 14vw, 13rem)",
-            lineHeight: 0.85,
+            fontSize: "clamp(3rem, 5vw, 14rem)",
+            letterSpacing: "0.02em",
+            lineHeight: 0.9,
             whiteSpace: "nowrap",
-            textShadow: "0 4px 30px rgba(0,0,0,0.5)"
+            textShadow: "0 2px 18px rgba(0,0,0,0.45)"
           }}
         >
           Krish Gupta
         </h1>
+
+        <div className="h-[3px] w-24 md:w-32 rounded-full bg-gradient-to-r from-[#0d58cc] via-cyan-300 to-emerald-400" />
 
         <div className="flex gap-6 text-2xl md:text-3xl justify-center pt-2">
           {socials.map(({ Icon, label, href }) => (
