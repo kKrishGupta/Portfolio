@@ -4,9 +4,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const socials = [
-  { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/krish-gupta-1aabbb1b3/" },
-  { Icon: FaGithub, label: "GitHub", href: "https://github.com/krishgupta123" },
-  { Icon: SiLeetcode, label: "LeetCode", href: "https://leetcode.com/u/krishgupta123/" }
+  { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/krish-gupta-3660b9299/" },
+  { Icon: FaGithub, label: "GitHub", href: "https://github.com/kKrishGupta" },
+  { Icon: SiLeetcode, label: "LeetCode", href: "https://leetcode.com/u/Ad1kFapNzh/" }
 ];
 
 const glowVariants = {
