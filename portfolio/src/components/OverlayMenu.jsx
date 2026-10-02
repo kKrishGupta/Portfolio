@@ -27,10 +27,8 @@ className= "absolute top-6 right-6 text-white text-3xl" aria-label="Close Menu">
     "About",
     "Skills",
     "Projects",
-    "Experience",
-    "Testimonials", 
     "Contact"
-].map((item,index) => (
+  ].map((item,index) => (
   <motion.li key = {item}
    initial = {{opacity: 0, y: 20 }}
    animate = {{opacity: 1, y: 0}}
