@@ -1,5 +1,6 @@
 # 🚀 Krish Gupta — Full Stack Developer Portfolio
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_Portfolio-00bf8f?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kkrishgupta.github.io/Portfolio/)
 ![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.2-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -8,6 +9,8 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 A modern, high-performance, interactive developer portfolio built with **React 19**, **Vite**, **Tailwind CSS v4**, **Framer Motion**, and custom canvas particle animations.
+
+🔗 **Live Demo**: [https://kkrishgupta.github.io/Portfolio/](https://kkrishgupta.github.io/Portfolio/)
 
 ---
 
