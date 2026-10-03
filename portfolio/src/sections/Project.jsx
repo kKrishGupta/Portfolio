@@ -28,7 +28,7 @@ export default function Project() {
   const sceneRef = useRef(null);
   const projects = useMemo(() => [{
     title: "AI Interview and Resume Builder",
-    link: "",
+    link: "https://resume-maker-khaki-nine.vercel.app/",
     bgColor: "",
     image: isMobile ? photo1 : img1
   }, {
