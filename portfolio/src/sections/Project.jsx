@@ -32,13 +32,13 @@ export default function Project() {
     bgColor: "",
     image: isMobile ? photo1 : img1
   }, {
-    title: "Project2",
-    link: "",
+    title: "ShopNest E-Commerce",
+    link: "https://e-commerce-platform-7ur3.vercel.app/",
     bgColor: "",
     image: isMobile ? photo2 : img2
   }, {
-    title: "Project3",
-    link: "",
+    title: "PortFolio Website",
+    link: "https://portfolio-eight-mu-eb5hr5b9wn.vercel.app/",
     bgColor: "",
     image: isMobile ? photo3 : img3
   }
@@ -81,7 +81,7 @@ export default function Project() {
                 )}
               </AnimatePresence>
 
-              <div className={`relative w-full overflow-hidden bg-black/20 shadow-2xl md: shadow-[0_35px_60px_-15px_rgba(0,0,0,0.7)] ${isMobile ? "mb-6 rounded-lg" : "mb-10 sm:mb-12 rounded-xl"
+              <div className={`relative w-full overflow-hidden bg-black/20 shadow-2xl md:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.7)] ${isMobile ? "mb-6 rounded-lg" : "mb-10 sm:mb-12 rounded-xl"
                 } h-[62vh] sm:h-[66vh] 
               `}
                 style={{ zIndex: 10, transition: "box-shadow 250ms ease" }}>
@@ -111,7 +111,7 @@ export default function Project() {
         <div className={`absolute ${isMobile ? "bottom-20" : "bottom-10"
           } z-30`}>
           <a href={activeProject?.link} target="_blank" rel="noopener noreferrer"
-            className="inline=block px-6 py-3 font-semibold rounded--lg bg-white text-black hover:bg-gray-200 transition-all"
+            className="inline-block px-6 py-3 font-semibold rounded-lg bg-white text-black hover:bg-gray-200 transition-all"
             aria-label={`View ${activeProject?.title || "Unknown"} project`}>
             View Project
           </a>
